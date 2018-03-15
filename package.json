@@ -1,0 +1,33 @@
+{
+  "name": "formulax",
+  "version": "1.0.0",
+  "description": "Fast javascript expression parser and compiler.",
+  "main": "build/index.js",
+  "repository": "https://github.com/ekorzun/formulax.git",
+  "keywords": [
+    "paser",
+    "formula"
+  ],
+  "author": "Evgeny Korzun",
+  "license": "WTFPL",
+  "private": false,
+  "scripts": {
+    "build": "babel src/index.js --out-file=build/index.js",
+    "test": "mocha ./test/suite.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.18.2",
+    "eslint-plugin-babel": "^4.1.2",
+    "mocha": "^5.0.4",
+    "mocha-clean": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      "stage-2"
+    ]
+  }
+}
