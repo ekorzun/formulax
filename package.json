@@ -12,7 +12,7 @@
   "license": "WTFPL",
   "private": false,
   "scripts": {
-    "build": "babel src --out-file=build/index.js",
+    "build": "babel src/* --out-dir=build",
     "test": "mocha ./test/suite.js"
   },
   "devDependencies": {
